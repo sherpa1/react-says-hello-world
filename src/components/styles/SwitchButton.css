@@ -1,0 +1,20 @@
+div.SwitchButton button.switch-to-light {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+div.SwitchButton button.switch-to-dark {
+  background-color: black;
+  color: white;
+}
+
+div.SwitchButton button {
+  border: none;
+  border-radius: 1em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+div.SwitchButton button span {
+  font-size: 1.2em;
+}

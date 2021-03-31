@@ -1,0 +1,20 @@
+div.Dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.8em;
+}
+
+div.Dialog p.robot span,
+div.Dialog p.you span {
+  border-radius: 1em;
+  padding: 0.3em;
+  margin: 0.3em;
+}
+
+div.Dialog p.you span {
+  background-color: lightskyblue;
+}
+div.Dialog p.robot span {
+  background-color: lightcoral;
+}
