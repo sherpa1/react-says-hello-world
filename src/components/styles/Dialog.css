@@ -12,9 +12,51 @@ div.Dialog p.you span {
   margin: 0.3em;
 }
 
+div#Hello.dark p.robot span,
+div#Hello.dark p.you span {
+  color: black;
+}
+
+.light p {
+  color: #3f50b5;
+}
+.light span {
+  color: black;
+}
+
+.dark p {
+  color: white;
+}
+.dark span {
+  color: black;
+}
+
 div.Dialog p.you span {
   background-color: lightskyblue;
 }
 div.Dialog p.robot span {
   background-color: lightcoral;
+}
+
+@media screen and (max-width: 400px) {
+  div.Dialog p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.Dialog {
+    line-height: auto;
+  }
+
+  div.Dialog p.robot,
+  div.Dialog p.you {
+    text-align: left;
+    font-size: 1.1em;
+  }
+
+  div.Dialog p.robot span,
+  div.Dialog p.you span {
+    padding: 0.4em;
+    font-size: 1.4em;
+  }
 }

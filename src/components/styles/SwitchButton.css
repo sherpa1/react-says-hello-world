@@ -1,10 +1,14 @@
 div.SwitchButton button.switch-to-light {
   background-color: blanchedalmond;
-  color: black;
+  color: #1f2229;
 }
 
 div.SwitchButton button.switch-to-dark {
-  background-color: black;
+  background-color: #1f2229;
+  color: white;
+}
+
+div.SwitchButton button.switch-to-dark span {
   color: white;
 }
 

@@ -3,6 +3,7 @@ import "./styles/Dialog.css";
 
 export default class Dialog extends React.Component {
 
+    //get the salutation formula according to day's moment
     salutation_according_to_day_moment() {
         const day = new Date();
         const hours = day.getHours();
@@ -16,7 +17,6 @@ export default class Dialog extends React.Component {
         if (hours >= 18) word = "Good evening";
 
         return word;
-
     }
 
     say_hello() {
