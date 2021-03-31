@@ -6,6 +6,18 @@ Un projet pour l'apprentissage du développement de Single Page Application avec
 
 ---
 
+## Commandes utiles (à exécuter dans le terminal depuis la racine du projet)
+
+- Installer les dépendances NPM
+
+`npm install`
+
+- Lancer l'application
+
+`yarn start`
+
+---
+
 **Ce projet est exclusivement destiné à l'enseignement.**
 
 Remarques, suggestions, corrections... bienvenues.
