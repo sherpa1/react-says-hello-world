@@ -23,7 +23,7 @@ export default class Hello extends React.Component {
         return (this.state.dark_mode) ? "dark" : "light";
     }
 
-    on_answer(e) {
+    on_submit_form(e) {
         e.preventDefault();//avoid reloading the page
         this.setState({ my_name: this.answer_ref.value });//update of the state by taking the value of a referenced input
     }
@@ -36,12 +36,12 @@ export default class Hello extends React.Component {
 
     render() {
         return <div id="hello" className={this.get_classname_according_to_state()}>
-            <h1 className={this.get_classname_according_to_state}>Hello World !</h1>
-            <img alt="World" src="./images/worldwide.png"></img>
+            <h1>Hello World !</h1>
+            <img alt="World" src="./images/worldwide.png" />
 
             <Dialog who={this.state.my_name} />
 
-            <form onSubmit={this.on_answer.bind(this)}>
+            <form onSubmit={this.on_submit_form.bind(this)}>
                 <input ref={this.answer_ref} type="text" value={this.state.answer} />
                 <input type="submit" value="answer" />
             </form>
@@ -50,6 +50,3 @@ export default class Hello extends React.Component {
         </div>
     }
 }
-
-
-

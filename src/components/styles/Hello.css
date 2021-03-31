@@ -62,6 +62,7 @@ div#hello input[type="submit"] {
   padding: 0.7em;
   background-color: lightskyblue;
   font-size: 1em;
+  cursor: pointer;
 }
 
 div#hello input {

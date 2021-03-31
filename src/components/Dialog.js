@@ -20,16 +20,16 @@ export default class Dialog extends React.Component {
     }
 
     say_hello() {
-        return (this.props.who !== "") ? <p class="robot">JavaScript Robot says :<span>"{this.salutation_according_to_day_moment()} {this.props.who} !"</span></p> : <p></p>;
+        return (this.props.who !== "") ? <p className="robot">JavaScript Robot says :<span>"{this.salutation_according_to_day_moment()} {this.props.who} !"</span></p> : <p></p>;
     }
 
     say_your_name() {
-        return (this.props.who !== "") ? <p class="you"> You say :<span>"My name is {this.props.who}"</span></p > : <p></p>;
+        return (this.props.who !== "") ? <p className="you"> You say :<span>"My name is {this.props.who}"</span></p > : <p></p>;
     }
 
     render() {
-        return <div class="Dialog">
-            <p class="robot">JavaScript Robot says :<span> "What is your name ?"</span></p>
+        return <div className="Dialog">
+            <p className="robot">JavaScript Robot says :<span> "What is your name ?"</span></p>
             {this.say_your_name()}
             {this.say_hello()}
         </div>;

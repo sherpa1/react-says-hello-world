@@ -29,6 +29,6 @@ export default class SwitchButton extends React.Component {
     }
 
     render() {
-        return <div class="SwitchButton"><button className={this.get_button_classname()} onClick={() => this.on_click()}>Switch to <span>{this.switch_mode_button_label()} mode</span></button></div>;
+        return <div className="SwitchButton"><button className={this.get_button_classname()} onClick={() => this.on_click()}>Switch to <span>{this.switch_mode_button_label()} mode</span></button></div>;
     }
 }
