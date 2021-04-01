@@ -4,6 +4,8 @@
 
 Un projet pour l'apprentissage du développement de Single Page Application avec React.js
 
+Pour pourvoir utiliser cette application il est nécessaire d'installer les dépendances NPM du projet (cf. ci-dessous).
+
 ---
 
 ## Commandes utiles (à exécuter dans le terminal depuis la racine du projet)
