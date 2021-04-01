@@ -22,6 +22,10 @@ _L'ensemble des commandes associées à React.js est documenté dans le fichier 
 
 ---
 
+Icône réalisé par Turkkub pour www.flaticon.com : https://www.flaticon.com/authors/turkkub
+
+---
+
 **Ce projet est exclusivement destiné à l'enseignement.**
 
 Remarques, suggestions, corrections... bienvenues.
