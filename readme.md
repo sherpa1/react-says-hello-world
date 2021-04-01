@@ -10,6 +10,8 @@ Pour pourvoir utiliser cette application il est nécessaire d'installer les dép
 
 ## Commandes utiles (à exécuter dans le terminal depuis la racine du projet)
 
+_L'ensemble des commandes associées à React.js est documenté dans le fichier `./reactjs.md`_
+
 - Installer les dépendances NPM
 
 `npm install`
