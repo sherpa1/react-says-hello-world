@@ -4,7 +4,7 @@ import "./styles/SwitchButton.css";
 export default class SwitchButton extends React.Component {
 
     constructor(props) {
-        super(props);//cannot use this keyword until "super(props);" has been placed
+        super(props);//cannot use "this" keyword until "super(props);" has been placed
 
         //initialization of the attributes of the application state
         this.state = {
@@ -12,7 +12,7 @@ export default class SwitchButton extends React.Component {
         };
     }
 
-    on_click() {
+    on_click = () => {
         this.setState({
             button_value: !this.state.button_value//toggle button_value state
         });
@@ -20,11 +20,11 @@ export default class SwitchButton extends React.Component {
         this.props.onSwitch();//execute the callback method transmitted via the props of the class by the parent component
     }
 
-    switch_mode_button_label() {
+    switch_mode_button_label = () => {
         return (this.state.button_value) ? "Light" : "Dark";//get label according to state value
     }
 
-    get_button_classname() {
+    get_button_classname = () => {
         return (this.state.button_value) ? "switch-to-light" : "switch-to-dark";//get class name according to state value
     }
 

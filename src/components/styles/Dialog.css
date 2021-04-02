@@ -5,11 +5,17 @@ div.Dialog {
   line-height: 0.8em;
 }
 
+div.Dialog p.robot,
+div.Dialog p.you {
+  font-size: 2em;
+}
+
 div.Dialog p.robot span,
 div.Dialog p.you span {
   border-radius: 1em;
   padding: 0.3em;
   margin: 0.3em;
+  font-size: 0.8em;
 }
 
 div#Hello.dark p.robot span,
@@ -32,10 +38,10 @@ div#Hello.dark p.you span {
 }
 
 div.Dialog p.you span {
-  background-color: lightskyblue;
+  background-color: lemonchiffon;
 }
 div.Dialog p.robot span {
-  background-color: lightcoral;
+  background-color: lightskyblue;
 }
 
 @media screen and (max-width: 400px) {
@@ -58,5 +64,31 @@ div.Dialog p.robot span {
   div.Dialog p.you span {
     padding: 0.4em;
     font-size: 1.4em;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-delay {
+  animation: fadeInDelay ease 2s 10s;
+}
+
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
