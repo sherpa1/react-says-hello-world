@@ -61,11 +61,16 @@ export default class Hello extends React.Component {
             <Dialog who={this.state.my_name} />
 
             <form onSubmit={this.on_submit_form}>
-                <input type="text" ref={this.answer_ref} />
+                <input placeholder="enter your name" type="text" ref={this.answer_ref} />
                 {this.submit_or_cancel_button()}
             </form>
 
             <SwitchButton onSwitch={this.on_switch} />
+            <footer>
+                <div>Alexandre Leroux - Université de Lorraine - Institut des Sciences du Digital - M1 Sciences Cognitives</div>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </footer>
         </div>
     }
 }

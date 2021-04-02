@@ -59,7 +59,7 @@ div#hello div {
 
 div#hello button {
   border-radius: 1em;
-  padding: 0.5em;
+  padding: 1em;
   cursor: pointer;
   border: none;
 }
@@ -87,6 +87,10 @@ div#hello.dark input[type="text"] {
   border: solid 3px white;
   border-radius: 1em;
   margin: 0.5em;
+}
+
+div#hello footer div {
+  display: initial;
 }
 
 @media screen and (max-width: 400px) {
