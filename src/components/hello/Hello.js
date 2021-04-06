@@ -1,7 +1,9 @@
 import React from "react";
 import './Hello.css';
+
 import Dialog from "../dialog/Dialog";
 import SwitchButton from "../switch-button/SwitchButton";
+
 import Translator from "../../utils/Translator";
 
 export default class Hello extends React.Component {
@@ -35,12 +37,6 @@ export default class Hello extends React.Component {
     }
 
     on_cancel = () => {
-        this.setState({
-            my_name: ""
-        });
-    }
-
-    on_cancel = () => {
 
         this.setState({ my_name: "" });
         this.answer_ref.current.value = "";
@@ -52,7 +48,6 @@ export default class Hello extends React.Component {
             <button onClick={() => this.on_cancel()}>x</button> :
             <input type="submit" value={Translator.translate("answer",this.props.language)} />
     }
-
 
     render() {
         return <div id="hello" className={this.get_classname_according_to_state()}>
