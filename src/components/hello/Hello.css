@@ -83,6 +83,10 @@ div#hello input {
   font-size: 1em;
 }
 
+div#hello input {
+  outline: none;
+}
+
 div#hello.dark input[type="text"] {
   border: solid 3px white;
   border-radius: 1em;
@@ -101,10 +105,11 @@ div#hello footer div {
   }
   div#hello h1 {
     margin: 0;
+    font-size: 2em;
   }
 
   div#hello img {
-    width: 10em;
+    width: 8em;
   }
 
   div#hello form {
@@ -117,5 +122,9 @@ div#hello footer div {
     padding: 0.7em;
     font-size: 1.2em;
     width: 50%;
+  }
+
+  footer div{
+    font-size: 0.8em;
   }
 }

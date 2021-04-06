@@ -1,5 +1,6 @@
 import React from "react";
-import "./styles/SwitchButton.css";
+import "./SwitchButton.css";
+import Translator from "../../utils/Translator";
 
 export default class SwitchButton extends React.Component {
 
@@ -21,7 +22,7 @@ export default class SwitchButton extends React.Component {
     }
 
     switch_mode_button_label = () => {
-        return (this.state.button_value) ? "Light" : "Dark";//get label according to state value
+        return (this.state.button_value) ? Translator.translate("light",this.props.language) : Translator.translate("dark",this.props.language);//get label according to state value
     }
 
     get_button_classname = () => {
@@ -29,6 +30,6 @@ export default class SwitchButton extends React.Component {
     }
 
     render() {
-        return <div className="SwitchButton"><button className={this.get_button_classname()} onClick={() => this.on_click()}>Switch to <span>{this.switch_mode_button_label()} mode</span></button></div>;
+        return <div className="SwitchButton"><button className={this.get_button_classname()} onClick={() => this.on_click()}>{Translator.translate("switch_to",this.props.language)} <span>{this.switch_mode_button_label()} {Translator.translate("mode",this.props.language)}</span></button></div>;
     }
 }

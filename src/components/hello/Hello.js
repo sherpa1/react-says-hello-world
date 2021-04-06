@@ -1,7 +1,8 @@
 import React from "react";
-import './styles/Hello.css';
-import Dialog from "./Dialog";
-import SwitchButton from "./SwitchButton";
+import './Hello.css';
+import Dialog from "../dialog/Dialog";
+import SwitchButton from "../switch-button/SwitchButton";
+import Translator from "../../utils/Translator";
 
 export default class Hello extends React.Component {
 
@@ -27,7 +28,7 @@ export default class Hello extends React.Component {
         this.setState({ my_name: this.answer_ref.current.value });//update of the state by taking the value of a referenced input
     }
 
-    on_switch = () => {
+    on_mode_change = () => {
         this.setState({
             dark_mode: !this.state.dark_mode//toggle Dark Mode value
         });
@@ -49,23 +50,23 @@ export default class Hello extends React.Component {
         return (this.state.my_name !== "") ?
 
             <button onClick={() => this.on_cancel()}>x</button> :
-            <input type="submit" value="answer" />
+            <input type="submit" value={Translator.translate("answer",this.props.language)} />
     }
 
 
     render() {
         return <div id="hello" className={this.get_classname_according_to_state()}>
-            <h1>React says : <br /><span>Hello World !</span></h1>
+            <h1>{Translator.translate("react_says",this.props.language)}<br /><span>{Translator.translate("hello_world",this.props.language)}</span></h1>
             <img alt="World" src="./images/worldwide.png" />
 
-            <Dialog who={this.state.my_name} />
+            <Dialog language={this.props.language} who={this.state.my_name} />
 
             <form onSubmit={this.on_submit_form}>
-                <input placeholder="enter your name" type="text" ref={this.answer_ref} />
+                <input placeholder={Translator.translate("enter_your_name",this.props.language)} type="text" ref={this.answer_ref} />
                 {this.submit_or_cancel_button()}
             </form>
 
-            <SwitchButton onSwitch={this.on_switch} />
+            <SwitchButton language={this.props.language} onSwitch={this.on_mode_change} />
             <footer>
                 <div>Alexandre Leroux - Université de Lorraine - Institut des Sciences du Digital - M1 Sciences Cognitives</div>
                 <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a

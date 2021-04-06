@@ -1,0 +1,30 @@
+.SwitchLanguageButton{
+    border:none;
+    background-color: lightblue;
+    color:white;
+    border-radius: 1em;
+    position: fixed;
+    right: 2em;
+    top:2em;
+    padding:0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SwitchLanguageButton:hover{
+    background-color: lightskyblue;
+    color:white;
+}
+
+.SwitchLanguageButton span{
+    color:white;
+    font-weight: normal;
+    margin:0.2em;
+    font-size: 0.8em;
+}
+
+.SwitchLanguageButton span.active{
+    color:#3f50b5;
+    font-weight: bold;
+    font-size: 1em;
+}
