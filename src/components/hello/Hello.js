@@ -68,7 +68,7 @@ export default class Hello extends React.Component {
 
             <SwitchButton language={this.props.language} onSwitch={this.on_mode_change} />
             <footer>
-                <div>Alexandre Leroux - Université de Lorraine - Institut des Sciences du Digital - M1 Sciences Cognitives</div>
+                <div>2021 - Alexandre Leroux - Université de Lorraine - Institut des Sciences du Digital - M1 Sciences Cognitives</div>
                 <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a
                     href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             </footer>
