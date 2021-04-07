@@ -14,7 +14,7 @@ _L'ensemble des commandes associées à React.js est documenté dans le fichier 
 
 - Installer les dépendances NPM
 
-`npm install`
+`yarn`
 
 - Lancer l'application
 
